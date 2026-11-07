@@ -1,0 +1,56 @@
+# Práctica 2 — ASR
+# Las versiones se dejan sin fijar a propósito: parte de la práctica consiste
+# en comprobar qué versión instaláis y si está mantenida (criterio 5).
+#
+#   pip install -r requirements.txt
+#
+# Además hace falta ffmpeg, que NO se instala con pip:
+#   Linux:  sudo apt install ffmpeg
+#   macOS:  brew install ffmpeg
+
+# --- Métricas y normalización ---------------------------------------------
+jiwer
+num2words
+
+# --- Audio -----------------------------------------------------------------
+soundfile
+librosa
+numpy
+
+# --- Backend de la sesión 1 ------------------------------------------------
+# faster-whisper NO es opcional: el cuaderno lo usa desde el primer baseline.
+# Trae CTranslate2, que no depende de PyTorch, así que la instalación es
+# ligera y funciona igual en CPU que en GPU.
+faster-whisper
+
+# --- Medida de VRAM --------------------------------------------------------
+# No hace nada en máquinas sin GPU NVIDIA, pero tampoco molesta.
+nvidia-ml-py
+
+# --- Análisis y cuadernos --------------------------------------------------
+pandas
+matplotlib
+jupyterlab
+ipywidgets
+
+# ---------------------------------------------------------------------------
+# Backend CTC (sesión 2): wav2vec2 y MMS
+#
+# Descomentad estas dos líneas si elegís un modelo de la familia CTC. Arrastran
+# PyTorch, que ocupa un par de GB: por eso no van en el núcleo.
+#
+#   pip install transformers torch
+#
+# Con GPU NVIDIA, instalad primero la rueda de vuestra versión de CUDA:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+# ---------------------------------------------------------------------------
+
+# transformers
+# torch
+
+# ---------------------------------------------------------------------------
+# Otros backends, si los elegís como tercer modelo
+# ---------------------------------------------------------------------------
+
+# vosk                    # línea CPU, modelos pequeños
+# nemo_toolkit[asr]       # Canary / Parakeet — pesado

@@ -1,0 +1,12 @@
+Muestra pequena del conjunto de evaluacion, para poder ejecutar el cuaderno en
+local sin acceso a NIMROD.
+
+El cuaderno usa este directorio cuando la variable P2_EVAL_SET no esta definida.
+En un workspace de NIMROD, P2_EVAL_SET apunta al conjunto comun completo y este
+directorio se ignora.
+
+IMPORTANTE: esto NO es el conjunto de evaluacion. Los numeros que entregais en
+resultados/resultados.csv salen del conjunto comun completo (200 enunciados).
+Estas muestras solo sirven para que el codigo arranque y para depurar.
+
+La procedencia y la licencia de cada bloque estan en FUENTES.md.

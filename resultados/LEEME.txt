@@ -1,0 +1,13 @@
+Aqui va resultados.csv, con el esquema fijo que ya trae la cabecera.
+
+No se anaden ni se reordenan columnas: la tabla agregada de la clase se monta
+concatenando el CSV de todos los equipos.
+
+Reglas de llenado:
+  - entorno vale 'nimrod' o 'local'
+  - las filas con entorno=local dejan VACIAS rtf_medio, t_carga_s y
+    vram_pico_mb. No las estimeis ni las copieis de otra fila.
+  - debe haber al menos una fila entorno=nimrod + condicion=limpio por cada
+    modelo, con las tres columnas de rendimiento rellenas
+
+Comprobadlo con: python comprobar_entrega.py

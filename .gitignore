@@ -1,0 +1,43 @@
+# --- Audio degradado ------------------------------------------------------
+# Son cientos de ficheros y se regeneran con scripts/degradar.py, que es
+# determinista: misma semilla, mismo audio byte a byte en cualquier maquina.
+# eval_local/ NO esta aqui: esas muestras SI viajan con el repositorio.
+eval_degradado/
+roundtrip/
+
+# Conjunto de evaluacion comun, copiado de NIMROD para poder medir el WER
+# en local. Es material del profesor y pesa decenas de MB: no se sube.
+eval_set/
+
+# --- Modelos descargados --------------------------------------------------
+# Decenas o cientos de MB cada uno. Se descargan solos, o ya estan en la
+# cache compartida de NIMROD.
+modelos/
+hf/
+*.onnx
+*.onnx.json
+*.ckpt
+*.safetensors
+*.bin
+
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.venv*/
+env/
+.ipynb_checkpoints/
+
+# --- Sistema --------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# --- FICHEROS
+comprobar_gpu.py
+FALLOS_INFORME
+GUIA_CASA.md
+GUIA_LOCAL.md
+GUIA_NIMROD.md
+fusionar_resultados.py
+informe/
