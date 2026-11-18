@@ -36,8 +36,5 @@ Thumbs.db
 # --- FICHEROS
 comprobar_gpu.py
 FALLOS_INFORME
-GUIA_CASA.md
-GUIA_LOCAL.md
-GUIA_NIMROD.md
 fusionar_resultados.py
 informe/
