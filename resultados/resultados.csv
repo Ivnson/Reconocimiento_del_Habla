@@ -1,1 +1,4 @@
 equipo,modelo,backend,precision,condicion,entorno,wer,cer,rtf_medio,t_carga_s,vram_pico_mb,licencia
+equipo-02,large-v3-turbo,faster-whisper,float16,limpio,local,0.0184,0.0145,,,,MIT
+equipo-02,facebook/wav2vec2-large-xlsr-53-spanish,transformers,float32,limpio,local,0.1397,0.0434,,,,Apache-2.0
+equipo-02,vosk-model-es-0.42,vosk,int8,limpio,local,0.0331,0.0211,,,,Apache-2.0
